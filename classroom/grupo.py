@@ -1,7 +1,7 @@
 from classroom.asignatura import Asignatura
 
 class Grupo:
-    grado = None
+    grado = "Grado 12"
 
     def __init__(self, grupo="grupo predeterminado", asignaturas=None, listadoAlumnos=None):
         self._grupo = grupo
@@ -13,7 +13,7 @@ class Grupo:
             self.listadoAlumnos=[]
         else:
             self.listadoAlumnos = listadoAlumnos
-        self.grado="Grado 12"
+        
 
     def listadoAsignaturas(self, **kwargs):
         for x in kwargs.values():
